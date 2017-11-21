@@ -1,0 +1,20 @@
+/*Remove lunchtime slots*/
+
+.gridPage .gridDays .gridDay div.gridNoFree:not(.gridTechnicallyFree):not(.gridHighlight) {
+    display: none;
+}
+
+
+/*UoM body styling*/
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.68;
+    font-weight: 300;
+    max-width: 700px;
+    letter-spacing: 0.0125rem;
+    padding-bottom: 24px;
+}

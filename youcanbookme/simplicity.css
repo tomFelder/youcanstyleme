@@ -1,0 +1,313 @@
+@import url(base-form.css);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext);
+body {
+    background-color: #eee;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 145%;
+}
+
+div.content {
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    margin: 0px auto;
+    max-width: 980px;
+}
+
+img {
+    max-width: 80%;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+    color: #9999ff;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #7878ea;
+    text-decoration: underline;
+}
+
+button,
+input[type='submit'] {
+    background: #FAEAC3;
+    padding: 5px 10px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #d4c296;
+    margin-bottom: 10px;
+}
+
+h1.title {
+    font-size: 26px;
+    line-height: 32px;
+}
+
+hr {
+    border: none;
+    background: #ddd;
+    height: 1px;
+}
+
+div.poweredBy {
+    margin-bottom: 25px;
+}
+
+.logo {
+    display: block;
+    margin: 20px auto;
+    /*width: 80%;*/
+    max-width: 400px;
+}
+
+.logo.portrait {
+    /*width: auto;*/
+    max-width: none;
+    max-height: 400px;
+}
+
+div.teamPic img,
+div.servicePic img {
+    display: inline-block;
+}
+
+
+/************/
+
+
+/* Services */
+
+
+/************/
+
+div.service {
+    border-top: 1px solid #ddd;
+    padding-top: 25px;
+    margin-top: 25px;
+}
+
+div.serviceSelect {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+div.servicePic {
+    max-width: 30%;
+    margin: 0px auto;
+}
+
+
+/*********/
+
+
+/* Teams */
+
+
+/*********/
+
+div.team {
+    border-top: 1px solid #ddd;
+    padding-top: 25px;
+    margin-top: 25px;
+}
+
+div.teamSelect {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+div.teamPic {
+    max-width: 30%;
+    margin: 0px auto;
+}
+
+
+/********/
+
+
+/* Grid */
+
+
+/********/
+
+#spiner {
+    text-align: center;
+}
+
+div.gridSlot,
+div.gridHeader {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 20px;
+}
+
+div.gridHeader {
+    color: black;
+    background-color: #9999FF;
+}
+
+div.gridFree {
+    color: black;
+    background-color: #cecefc;
+}
+
+div.showTechnicallyFree div.gridTechnicallyFree {
+    color: black;
+    background-color: #cecefc;
+}
+
+div.gridFree a {
+    color: #3a3a3a;
+    text-decoration: none;
+}
+
+div.gridHighlight {
+    color: black;
+    background-color: #FAEAC3;
+    cursor: pointer;
+}
+
+
+/* JQUERY DATEPICKER */
+
+
+/* Wrapper */
+
+.ui-datepicker {
+    border: 1px solid #9999FF !important;
+    background: #eaeef0 !important;
+}
+
+
+/* Inside the wrapper - main background for the entire calendar */
+
+.ui-widget-content {
+    background: #fff !important;
+}
+
+
+/* Header bar (where the month/year is displayed */
+
+.ui-widget-header {
+    background: #9999FF !important;
+    border: 1px solid #9999FF !important;
+}
+
+
+/* Days of the week */
+
+.ui-datepicker-calendar {
+    color: #9999FF !important;
+}
+
+
+/* Background of numbers */
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    border: 1px solid #9999FF !important;
+    background: #fff !important;
+    color: #9999FF!important;
+    border-radius: 3px !important;
+    text-align: center !important;
+}
+
+
+/* Background of numbers when you hover */
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+    border: 1px solid #cecefc !important;
+    background: #cecefc !important;
+    color: #000 !important;
+    border-radius: 3px !important;
+    text-align: center !important;
+}
+
+
+/* Today's date */
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    background: #cecefc !important;
+    border: 1px solid #cecefc !important;
+    color: #000 !important;
+}
+
+
+/* Previous arrow - background */
+
+.ui-datepicker-prev.ui-corner-all {
+    width: 20px !important;
+    height: 20px !important;
+    top: 8px !important;
+    left: 10px !important;
+}
+
+.ui-datepicker-prev.ui-corner-all:hover {
+    background: #cecefc !important;
+    border: none !important;
+}
+
+
+/* Previous arrow icon */
+
+.ui-datepicker-prev.ui-corner-all .ui-icon.ui-icon-circle-triangle-w,
+.ui-datepicker-prev.ui-corner-all .ui-icon.ui-icon-circle-triangle-w:hover {
+    background: url('/resources/jquery-ui-1.8.23/themes/ui-lightness/images/ui-icons_ffffff_256x240.png') !important;
+    background-position: -80px -192px !important;
+    cursor: pointer;
+}
+
+
+/* Next arrow - background */
+
+.ui-datepicker-next.ui-corner-all {
+    width: 20px !important;
+    height: 20px !important;
+    top: 8px !important;
+    right: 10px !important;
+}
+
+.ui-datepicker-next.ui-corner-all:hover {
+    background: #cecefc !important;
+    border: none !important;
+}
+
+
+/* Next arrow icon */
+
+.ui-datepicker-next.ui-corner-all .ui-icon.ui-icon-circle-triangle-e,
+.ui-datepicker-next.ui-corner-all .ui-icon.ui-icon-circle-triangle-e:hover {
+    background: url('/resources/jquery-ui-1.8.23/themes/ui-lightness/images/ui-icons_ffffff_256x240.png') !important;
+    background-position: -48px -192px !important;
+    cursor: pointer;
+}
+
+
+/****************/
+
+
+/* Booking form */
+
+
+/****************/
+
+div.itemLabel {
+    font-weight: bold;
+}
